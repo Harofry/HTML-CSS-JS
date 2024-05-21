@@ -1,0 +1,74 @@
+<html>
+<head>
+<style>
+    div {
+            padding: 10px;
+            background-color: #BDB76B;
+            overflow: hidden;
+        }
+	input[type=text], textarea, select {
+            font: 17px Calibri;
+            width: 70%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    input[type=button]{ 
+            font: 17px Calibri;
+            width: auto;
+            float: right;
+            cursor: pointer;
+            padding: 7px;
+        }
+	</style>
+	</head>
+	<body>
+		<div>
+		 <input type="text" id="txtnome" placeholder="Nome Cliente" />
+		</div>
+        <div>
+            <input type="text" id="txtIdade" placeholder="Idade Cliente" />
+        </div>
+        <div>
+            <input type="text" id="txtEmail" placeholder="Email Cliente" />
+		</div>
+		<div>
+            <input type="password" id="passwordSenha" placeholder="Senha Cliente" />
+		</div>
+		<div>
+            <select id="SelPais">
+                <option selected value="">-- Escolha Seu Pais --</option>
+				<option value="Brazil">Brazil</option>
+				<option value="Russia">Russia</option>
+				<option value="India">India</option>
+                <option value="China">China</option>
+                <option value="SouthAfrica">SouthAfrica</option>
+            </select>
+        </div>
+		<div>
+			<input type="button" id="bt" value="Salvar" onclick="Salvar()"/>
+		</div>
+		
+		<script>
+		function Salvar()
+	{
+		//surfando nas variáveis
+		var name = document.getElementById('txtnome').value;
+        var idade = document.getElementById('txtIdade').value;
+        var email = document.getElementById('txtEmail').value;
+		var password = document.getElementById('passwordSenha').value;
+        var pais = document.getElementById('SelPais').value;
+			 var data = 
+            ' As informações abaixo estao corretas? \r Name: ' + name + ' \r\n ' + 
+            'Idade: ' +idade + ' \r\n ' + 
+            'Email: ' + email + ' \r\n ' + 
+            'pais: ' + pais + ' \r\n ';
+        confirm(data);
+		confirm("você deseja salvar as informações?");
+		alert("Olá mundo, estive esperando por você");
+		
+	}
+	</script>
+	</body>
+	
+</html>
