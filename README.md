@@ -6,4 +6,4 @@
 
 observação: 
 1- bootstrap implementado.
-2- curso da alura de programação em Javascript realizado
+2- curso da alura de programação em Javascript realizado.
